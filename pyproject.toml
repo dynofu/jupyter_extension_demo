@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "refresh"
+version = "2020.07.26"
+description = "refresh"
+authors = ["Dyno Fu <dyno.fu@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "~3.8"
+absl-py = "*"
+altair = "*"
+attrs = "*"
+cattrs = "*"
+fsspec = "*"
+iplantuml = "*"
+ipython = "*"
+jupyter = "*"
+jupyterlab = "*"
+jupyterlab-git = "*"
+jupytext = "*"
+matplotlib = "*"
+more-itertools = "*"
+numpy = "*"
+pandas = "*"
+pygraphviz = "*"
+requests = "*"
+s3fs = "*"
+tabulate = "*"
+tqdm = "*"
+xeus-python = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+
+[tool.black]
+line-length = 120
+target-version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.cache
+  | \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.pytest_cache
+  | \.ropeproject
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''

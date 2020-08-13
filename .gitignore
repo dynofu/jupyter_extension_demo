@@ -1,0 +1,11 @@
+tmp
+zold
+opengrok
+opengrok-tools
+
+*.swp
+*.py[co]
+*.ipynb
+
+.idea/
+.vim/
