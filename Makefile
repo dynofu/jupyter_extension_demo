@@ -1,10 +1,13 @@
 SHELL = /bin/bash
 
-PROJECT := refresh
+PROJECT := demo
 
 .DEFAULT_GOAL: test
 
 # ------------------------------------------------------------------------------
+
+init: poetry-install install-labextensions
+
 test:
 	poetry run pytest
 
